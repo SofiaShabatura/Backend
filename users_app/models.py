@@ -17,6 +17,7 @@ class Profile(models.Model):
     # Поля згідно з твоєю діаграмою
     name = models.CharField(max_length=100)
     
+    
     # null=True та blank=True дозволяють створити профіль, навіть якщо аватарки ще немає
     avatar = models.CharField(max_length=255, blank=True, null=True)
 
